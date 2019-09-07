@@ -1,0 +1,111 @@
+/*
+
+3. Header / Nav and intro text content 
+
+*/
+
+.container.nav {
+    position: absolute;
+    z-index: 999999;
+    @include horizontal-align;
+}
+
+nav {
+    margin-top: 40px;
+    @media screen and (max-width: 745px) {
+        margin-bottom: 150px;
+    }
+    color: black;
+    a {
+        color: black;
+    }
+    font-size: 18px;
+    .logo {
+        display: inline-block;
+        font-weight: 500;
+        position: absolute;
+        float: left;
+    }
+    ul {
+        margin: 0px;
+        li {
+            display: inline-block;
+            margin-left: 40px;
+            a {
+                color: black;
+            }
+        }
+        &.centernav {
+            text-align: center;
+            margin: 0px auto;
+            display: block;
+            padding: 0px;
+            li {
+                @media screen and (max-width: 550px) {
+                    opacity: 0;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        &.sidenav {
+            float: right;
+            margin-top: -21px;
+            a {
+                color: #6d6d6d;
+                @include ease(0.4s);
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.header {
+    padding-top: 240px;
+    margin-bottom: 150px;
+    h1 {
+        width: 70%;
+        margin: 0px auto;
+        animation-duration: 8s;
+        -webkit-animation-delay: 0.5s;
+        @media screen and (max-width: 1200px) {
+            width: 85%;
+        }
+        @media screen and (max-width: 836px) {
+            width: 95%;
+        }
+        @media screen and (max-width: 745px) {
+            width: 100%;
+        }
+    }
+    .work-line {
+        -webkit-animation-delay: 1s;
+    }
+    .vertcial-line {
+        margin: 50px auto 30px auto;
+        width: 60%;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            border-left: 2px solid black;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        @media screen and (max-width: 745px) {
+            font-size: 18px;
+        }
+    }
+}

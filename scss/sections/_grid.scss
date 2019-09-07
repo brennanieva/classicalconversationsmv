@@ -1,0 +1,155 @@
+/* 
+
+1. Grid
+
+*/
+
+.container {
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+    @media screen and (max-width: 1200px) {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (max-width: 600px) {
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@mixin fullwidth {
+    @media screen and (max-width: 750px) {
+        width: 100%;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+.col {
+    display: block;
+    float: left;
+margin: 1% 0 1% 4%;
+&:first-child {
+    margin-left: 0;
+}
+
+    @media screen and (max-width: 750px) {
+        margin: 1% 0 1% 0%;
+    }
+}
+
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+    width: 100%;
+}
+
+.span_11_of_12 {
+    width: 91.33%;
+     @include fullwidth;
+}
+.span_10_of_12 {
+    width: 82.66%;
+     @include fullwidth;
+}
+
+.span_9_of_12 {
+    width: 74%;
+     @include fullwidth;
+}
+
+.span_8_of_12 {
+    width: 65.33%;
+     @include fullwidth;
+}
+
+.span_7_of_12 {
+    width: 56.66%;
+     @include fullwidth;
+}
+
+.span_6_of_12 {
+    width: 48%;
+     @include fullwidth;
+}
+
+.span_5_of_12 {
+    width: 39.33%;
+     @include fullwidth;
+}
+
+.span_4_of_12 {
+    width: 30.66%;
+     @include fullwidth;
+}
+
+.span_3_of_12 {
+    width: 22%;
+     @include fullwidth;
+}
+
+.span_2_of_12 {
+    width: 13.33%;
+     @include fullwidth;
+}
+
+.span_1_of_12 {
+    width: 4.666%;
+     @include fullwidth;
+}
+
+.span_5_of_5 {
+    width: 100%;
+    @include fullwidth;
+}
+
+.span_4_of_5 {
+    width: 79.6%;
+    @include fullwidth;
+}
+
+.span_3_of_5 {
+    width: 59.2%;
+    @include fullwidth;
+}
+
+.span_2_of_5 {
+    width: 38.8%;
+    @include fullwidth;
+}
+
+.span_1_of_5 {
+    width: 18.4%;
+    @include fullwidth;
+}

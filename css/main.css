@@ -1,0 +1,470 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Grid
+2. General styles
+3. Header / Nav and intro text content
+4. Behance Portfolio styleing
+5. Footer / About, Contact, Social, Copyright
+-------------------------------------------------------------------*/
+/*
+
+1. Grid
+
+*/
+.container {
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 88%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 4%; }
+  .col:first-child {
+    margin-left: 0; }
+  @media screen and (max-width: 750px) {
+    .col {
+      margin: 1% 0 1% 0%; } }
+
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1; }
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+  width: 100%; }
+
+.span_11_of_12 {
+  width: 91.33%; }
+  @media screen and (max-width: 750px) {
+    .span_11_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_11_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_10_of_12 {
+  width: 82.66%; }
+  @media screen and (max-width: 750px) {
+    .span_10_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_10_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_9_of_12 {
+  width: 74%; }
+  @media screen and (max-width: 750px) {
+    .span_9_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_9_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_8_of_12 {
+  width: 65.33%; }
+  @media screen and (max-width: 750px) {
+    .span_8_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_8_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_7_of_12 {
+  width: 56.66%; }
+  @media screen and (max-width: 750px) {
+    .span_7_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_7_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_6_of_12 {
+  width: 48%; }
+  @media screen and (max-width: 750px) {
+    .span_6_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_6_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_5_of_12 {
+  width: 39.33%; }
+  @media screen and (max-width: 750px) {
+    .span_5_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_5_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_4_of_12 {
+  width: 30.66%; }
+  @media screen and (max-width: 750px) {
+    .span_4_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_4_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_3_of_12 {
+  width: 22%; }
+  @media screen and (max-width: 750px) {
+    .span_3_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_3_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_2_of_12 {
+  width: 13.33%; }
+  @media screen and (max-width: 750px) {
+    .span_2_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_2_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_1_of_12 {
+  width: 4.666%; }
+  @media screen and (max-width: 750px) {
+    .span_1_of_12 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_1_of_12:last-child {
+        margin-bottom: 0px; } }
+
+.span_5_of_5 {
+  width: 100%; }
+  @media screen and (max-width: 750px) {
+    .span_5_of_5 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_5_of_5:last-child {
+        margin-bottom: 0px; } }
+
+.span_4_of_5 {
+  width: 79.6%; }
+  @media screen and (max-width: 750px) {
+    .span_4_of_5 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_4_of_5:last-child {
+        margin-bottom: 0px; } }
+
+.span_3_of_5 {
+  width: 59.2%; }
+  @media screen and (max-width: 750px) {
+    .span_3_of_5 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_3_of_5:last-child {
+        margin-bottom: 0px; } }
+
+.span_2_of_5 {
+  width: 38.8%; }
+  @media screen and (max-width: 750px) {
+    .span_2_of_5 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_2_of_5:last-child {
+        margin-bottom: 0px; } }
+
+.span_1_of_5 {
+  width: 18.4%; }
+  @media screen and (max-width: 750px) {
+    .span_1_of_5 {
+      width: 100%;
+      margin-bottom: 30px; }
+      .span_1_of_5:last-child {
+        margin-bottom: 0px; } }
+
+/*
+
+2. General styles
+
+*/
+body {
+  height: 100%;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-weight: 400; }
+
+h1 {
+  font-size: 31px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 2px; }
+  @media screen and (max-width: 1010px) {
+    h1 {
+      font-size: 25px; } }
+  @media screen and (max-width: 560px) {
+    h1 {
+      font-size: 20px; } }
+
+h2 {
+  font-size: 20px; }
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.6; }
+
+/*
+
+3. Header / Nav and intro text content
+
+*/
+.container.nav {
+  position: absolute;
+  z-index: 999999;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+nav {
+  margin-top: 40px;
+  color: black;
+  font-size: 18px; }
+  @media screen and (max-width: 745px) {
+    nav {
+      margin-bottom: 150px; } }
+  nav a {
+    color: black; }
+  nav .logo {
+    display: inline-block;
+    font-weight: 500;
+    position: absolute;
+    float: left; }
+    background-size: auto 43px;
+    background-image: url(../img/CCLogo.png);
+    background-repeat: no-repeat;
+  nav ul {
+    margin: 0px; }
+    nav ul li {
+      display: inline-block;
+      margin-left: 40px; }
+      nav ul li a {
+        color: black; }
+    nav ul.centernav {
+      text-align: center;
+      margin: 0px auto;
+      display: block;
+      padding: 0px; }
+      @media screen and (max-width: 550px) {
+        nav ul.centernav li {
+          opacity: 0; } }
+      nav ul.centernav li:first-child {
+        margin-left: 0; }
+    nav ul.sidenav {
+      float: right;
+      margin-top: -21px; }
+      nav ul.sidenav a {
+        color: #6d6d6d;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+        nav ul.sidenav a:hover {
+          color: black; }
+
+.header {
+  padding-top: 240px;
+  margin-bottom: 150px; }
+  .header h1 {
+    width: 70%;
+    margin: 0px auto;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-delay: 0.5s; }
+    @media screen and (max-width: 1200px) {
+      .header h1 {
+        width: 85%; } }
+    @media screen and (max-width: 836px) {
+      .header h1 {
+        width: 95%; } }
+    @media screen and (max-width: 745px) {
+      .header h1 {
+        width: 100%; } }
+  .header .work-line {
+    -webkit-animation-delay: 1s; }
+  .header .vertcial-line {
+    margin: 50px auto 30px auto;
+    width: 60%;
+    height: 40px;
+    position: relative;
+    text-align: center; }
+    .header .vertcial-line:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      border-left: 2px solid black; }
+  .header h4 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px; }
+    @media screen and (max-width: 745px) {
+      .header h4 {
+        font-size: 18px; } }
+
+/*
+4. Behance Portfolio styling
+*/
+#behance_feed {
+  width: 100%;
+  clear: both;
+  display: table; }
+  @media screen and (max-width: 550px) {
+    #behance_feed {
+      margin: 0% auto; } }
+
+.behance_entry {
+  width: 32%;
+  margin-top: 0%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #000; }
+  .behance_entry:nth-child(3n+3) {
+    margin-right: 0%; }
+  .behance_entry:last-child {
+    margin-bottom: 0%; }
+  @media screen and (max-width: 1140px) {
+    .behance_entry {
+      width: 49%; }
+      .behance_entry:nth-child(3n+3) {
+        margin-right: 2%; }
+      .behance_entry:nth-child(2n+2) {
+        margin-right: 0%; } }
+  @media screen and (max-width: 550px) {
+    .behance_entry {
+      width: 100%;
+      margin-right: 0%; } }
+  .behance_entry img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .behance_entry .titlelink {
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 50% auto 0% auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #fff;
+    width: 85%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+  .behance_entry:hover {
+    cursor: pointer; }
+    .behance_entry:hover .titlelink {
+      opacity: 1; }
+    .behance_entry:hover img {
+      opacity: 0; }
+
+/*
+
+5. Footer / About, Contact, Social, Copyright
+
+*/
+footer .footer-content {
+  margin-top: 150px;
+  margin-bottom: 100px; }
+  @media screen and (max-width: 750px) {
+    footer .footer-content {
+      margin-top: 100px;
+      margin-bottom: 80px; } }
+  @media screen and (max-width: 550px) {
+    footer .footer-content {
+      margin-top: 60px;
+      margin-bottom: 40px; } }
+
+footer .bottom-footer {
+  margin-top: 80px; }
+  @media screen and (max-width: 750px) {
+    footer .bottom-footer {
+      margin-top: 40px; } }
+  footer .bottom-footer p {
+    font-size: 14px; }
+
+footer p {
+  line-height: 2; }
+  footer p.about-text {
+    width: 90%; }
+
+footer h3 {
+  text-align: left;
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 30px; }
+
+footer ul {
+  float: right;
+  margin: 0px;
+  padding: 0px; }
+  footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px; }
+    footer ul li:first-child {
+      margin-left: 0px; }
+  @media screen and (max-width: 750px) {
+    footer ul {
+      float: none;
+      padding-bottom: 20px; } }
+
+footer a {
+  color: black; }

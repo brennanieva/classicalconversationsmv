@@ -1,0 +1,61 @@
+/* 
+
+5. Footer / About, Contact, Social, Copyright
+
+*/
+
+footer {
+    .footer-content {
+        margin-top: 150px;
+        margin-bottom: 100px;
+        @media screen and (max-width: 750px) {
+            margin-top: 100px;
+            margin-bottom: 80px;
+        }
+        @media screen and (max-width: 550px) {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+    }
+    .bottom-footer {
+        margin-top: 80px;
+        @media screen and (max-width: 750px) {
+            margin-top: 40px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    p {
+        line-height: 2;
+        &.about-text {
+            width: 90%;
+        }
+    }
+    h3 {
+        text-align: left;
+        font-size: 22px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    ul {
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 40px;
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+        @media screen and (max-width: 750px) {
+            float: none;
+            padding-bottom: 20px;
+        }
+    }
+    a {
+        color: black;
+    }
+}

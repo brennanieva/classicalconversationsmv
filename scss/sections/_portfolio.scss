@@ -1,0 +1,71 @@
+/*
+4. Behance Portfolio styling
+*/
+#behance_feed {
+    width: 100%;
+    clear: both;
+    display: table;
+    @media screen and (max-width: 550px) {
+        margin: 0% auto;
+    }
+}
+
+.behance_entry {
+    width: 32%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    background: $black;
+    &:nth-child(3n+3) {
+        margin-right: 0%;
+    }
+    &:last-child {
+        margin-bottom: 0%;
+    }
+    @media screen and (max-width: 1140px) {
+        width: 49%;
+        &:nth-child(3n+3) {
+            margin-right: 2%;
+        }
+         &:nth-child(2n+2) {
+            margin-right: 0%;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        width: 100%;
+        margin-right: 0%;
+    }
+    img {
+        width: 100%;
+        display: block;
+        opacity: 1;
+        @include ease(0.3s);
+    }
+    .titlelink {
+        opacity: 0;
+        @include absolute-center;
+        margin: 50% auto 0% auto;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: $white;
+        width: 85%;
+        @include ease(0.5s);
+    }
+    &:hover {
+        cursor: pointer;
+        .titlelink {
+            opacity: 1;
+        }
+        img {
+            opacity: 0;
+        }
+    }
+}
